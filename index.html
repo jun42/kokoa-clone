@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,39 @@
 <body>
     <div class="status-bar">
         <div class="status-bar__column"></div>
-            <span>No Service</span>
+            <span>No Service
             <i class="fas fa-wifi"></i>
-            
+            </span>
         <div class="status-bar__column"></div>
             <span>18:43</span>
             
         <div class="status-bar__column"></div>
-            <span>11%</span>
+            <span>11%
             <i class="fas fa-battery-quarter"></i>
             <i class="fas fa-bolt"></i>
+            </span>
             <!-- battery icon-->
             <!-- lightning icon-->
-
-        <header class="welcome-header">
-            <h1 class="welcome-header__title"> 
-                Welcome to KakaoTalk</h1>
-            <p class="welcome-header__text">
-                If you have Kakao Account,<br>
-                log in with your email or phone number
-            </p>
-        </header>
-
-        <form id="log">
-            <input type="text" placeholder="Email or phone number">
-            <input type="password" placeholder="Password">
-            <input type="submit" value="Log In">
-            <input type="submit" value="Sign Up"> <!-- button or input?-->
-            
-            <a href="#">Find Kakao Account or Paswword</a>
-
-        </form>
     </div>
+    
+    <header class="welcome-header">
+        <h1 class="welcome-header__title"> 
+            Welcome to KakaoTalk</h1>
+        <p class="welcome-header__text">
+            If you have Kakao Account,<br>
+            log in with your email or phone number
+        </p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Log In">
+        <input type="submit" value="Sign Up"> <!-- button or input?-->
+        
+        <a href="#">Find Kakao Account or Paswword</a>
+
+    </form>
     <!-- script는 마지막에-->
     <script src="https://kit.fontawesome.com/02963ce7ad.js" crossorigin="anonymous"></script>
 </body>
