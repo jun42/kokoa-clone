@@ -1,8 +1,49 @@
 .nav {
+    position:fixed;
+    bottom: 0px;
+    width: 100%; /*너비 고정으로 패딩 받은만큼 content공간 확보*/
+    box-sizing: border-box; /*box 늘리지 말아줘*/
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 20px 50px;
+    border-top: 1px solid rgba(0,0,0, 0.2);
 }
 .nav__list {
     display: flex;
     justify-content: space-between;
+}
+.nav__btn {
+   color: #2e363e;
+}
+.nav__link-chat {
+    position:relative;
+    /*color: #2e363e;*/
+}
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px; /*적용안됨 왜? span tag라서-> display: block; 사용*/
+    border-radius: 15px; /*원은 사각형의 절반으로*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 600;
+    position:absolute; /*position absolute는 position relative를 최우선으로!!*/
+    left: 15px;
+    top: -20px;
+    /*display: block; 때문에 flex 적용 안됨 */ 
+}
+
+.nav__link-find {
+    position:relative;
+}
+.nav__notification-find {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: flex;
+    position:absolute;
+    left: 30px;
+    top: -10px;
 }
